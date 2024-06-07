@@ -1,0 +1,54 @@
+--About-- 
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Tresenblury (BETA)", HidePremium = false, IntroText = "Loading script...", SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Welcome to tresenblury beta official made by MATTSUN9746 here you eill find out what will happen in future the non beta version is - loadstring(game:HttpGet("https://raw.githubusercontent.com/Hogalallallla/Moveable-Orion-script/main/Mattsun9746%20script%20moveable"))();",
+	Image = "rbxassetid://4483345998",
+	Time = 9
+})
+
+--Tabs--
+
+local Tab = Window:MakeTab({
+	Name = "Beta tools",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Tab2 = Window:MakeTab({
+	Name = "Beta script tester",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--Section--
+
+local Section = Tab:AddSection({
+	Name = "Beta tool section"
+})
+local Section = Tab2:AddSection({
+	Name = "Beta script tester section"
+})
+
+--Buttons--
+
+Tab1:AddDropdown({
+	Name = "Select tool",
+	Default = "1",
+	Options = {"Sword", "Death tool", "Apple", "Traser", "Laser"},
+	Callback = function(Value)
+		print(You can only get item in non beta version)
+	end    
+})
+Tab2:AddTextbox({
+	Name = "Script tester",
+	Default = "Enter text here",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Script is working fine)
+	end	  
+})
+
+--Main--
+
+OrionLib:Init()
