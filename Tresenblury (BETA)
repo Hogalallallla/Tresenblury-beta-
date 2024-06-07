@@ -1,4 +1,5 @@
 --About-- 
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Tresenblury (BETA)", HidePremium = false, IntroText = "Loading script...", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
@@ -45,8 +46,14 @@ Tab2:AddTextbox({
 	Default = "Enter text here",
 	TextDisappear = true,
 	Callback = function(Value)
-		print(Script is working fine)
+		print(Hello)
 	end	  
+})
+Tab2:AddButton({
+	Name = "Test script",
+	Callback = function()
+      		print("Script is working!")
+  	end    
 })
 
 --Main--
